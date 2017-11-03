@@ -1,0 +1,18 @@
+# Red Hat Network subscription information
+# NOTE: If register_undercloud is false, it is assumed the designated host will have access to
+#       needed repositories
+# TODO: Add ability to register to Satillite instead of RHN
+register_rhn: true
+rhn_user: "{{ vault_rhn_user }}"
+rhn_pwd: "{{ vault_rhn_pwd }}"
+rhn_pool_name: "{{ vault_rhn_pool_name }}"
+
+hostname_full: idm.int.hattrick.local
+hostname_short: idm
+external_ip: 192.168.1.2
+
+realm: INT.HATTRICK.LOCAL
+domain: int.hattrick.local
+dm_pass: Redhat1234
+admin_pass: Redhat1234
+forward_ip: 8.8.8.8
